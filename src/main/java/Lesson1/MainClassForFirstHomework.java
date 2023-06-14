@@ -5,11 +5,11 @@ import java.util.Random;
 // 1. Задать одномерный массив и найти в нем минимальный и максимальный элементы;
 public class MainClassForFirstHomework {
     public static int[] RandomArray() {
-        Random rand = new Random(); // создаем объект класса Random
-        int length = rand.nextInt(100); // рандомно установленная длина массива до 100 значений
+        Random rand = new Random();
+        int length = rand.nextInt(100);
         int[] numbs = new int[length];
         for (int i = 0; i < length; i++) {
-            numbs[i] = rand.nextInt(100); // заполняем каждый элемент случайным числом от 0 до 99
+            numbs[i] = rand.nextInt(100);
         }
         return numbs;
     }
