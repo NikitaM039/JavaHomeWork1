@@ -19,7 +19,7 @@ public class FirstTask {
         if (scanner.hasNextInt()) {
             size = scanner.nextInt();
         } else {
-            System.out.println("Вы допустили ошибку при вводе целого число. Попробуйте еще раз.");
+            System.out.println("Вы допустили ошибку при вводе длины.");
             scanner.next();
             size = scan();
         }
@@ -72,7 +72,7 @@ public class FirstTask {
             }
             i++;
         }
-        System.out.print("Список после удаления четных чисел: ");
+        System.out.print("Список без четных чисел: ");
         System.out.println(newList);
     }
 }
