@@ -41,7 +41,7 @@ public class HumanView implements PersonView<Human>{
         String name = params[1];
         String surname = params[2];
         Date birthdate = null;
-        Character sex = null;
+        char sex;
         try {
             birthdate = formatter.parse(params[3]);
         }catch (ParseException e){
@@ -51,7 +51,7 @@ public class HumanView implements PersonView<Human>{
         if (params[5].length()==1 && (params[5].charAt(0)=='f' || params[5].charAt(0)=='m')){
             sex = params[5].charAt(0);
         } else {
-            throw new Exception("Требуется f или m.");
+            throw new Exception("Требуется m или f.");
         }
 
         return new Human( family, name, surname, birthdate, phone, sex);
